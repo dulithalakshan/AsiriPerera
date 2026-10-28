@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PASAN ASIRI — Producer · Composer</title>
-<meta name="description" content="Official portfolio of Pasan Asiri — music producer and composer from Sri Lanka.">
+<title>PERERA PERERA — Producer · Composer</title>
+<meta name="description" content="Official portfolio of ASIRI PERERA — music producer and composer from Sri Lanka.">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800;900&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <script>/* apply saved theme before paint to avoid flash */
 try{const s=localStorage.getItem('pa-theme');document.documentElement.dataset.theme=s||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){}
@@ -145,7 +145,7 @@ footer{padding:30px 5vw;border-top:1px solid var(--line);display:flex;justify-co
 </head>
 <body>
 <nav>
-  <div class="logo">PASAN<span>//</span>ASIRI</div>
+  <div class="logo">ASIRI<span>//</span>PERERA</div>
   <ul><li><a href="#work">Work</a></li><li><a href="#listen">Listen</a></li><li><a href="#about">About</a></li><li><a href="#team">Team</a></li><li><a href="#contact">Contact</a></li></ul>
   <div class="nav-r">
     <button class="theme" id="themeBtn" aria-label="Switch light / dark theme" title="Switch theme">
@@ -162,7 +162,7 @@ footer{padding:30px 5vw;border-top:1px solid var(--line);display:flex;justify-co
   <div class="sun"></div><div class="grid"></div>
   <div class="hero-inner">
     <div class="tag">Music Producer · Composer · Sri Lanka</div>
-    <h1 class="glitch" data-text="PASAN ASIRI">PASAN ASIRI</h1>
+    <h1 class="glitch" data-text="ASIRI PERERA">ASIRI PERERA</h1>
     <p class="sub">Crafting sound for the next generation of Sri Lankan music. Productions, arrangements and original scores for artists and creators.</p>
     <div class="cta"><a class="btn" href="#work">▶ Watch Work</a><a class="btn pink" href="#listen">♫ Listen on Spotify</a></div>
     <div class="stats"><div><b>8+</b><small>Releases</small></div><div><b>M+</b><small>Views</small></div><div><b>∞</b><small>Ideas</small></div></div>
@@ -185,7 +185,7 @@ footer{padding:30px 5vw;border-top:1px solid var(--line);display:flex;justify-co
     <div class="reveal">
       <div class="idx">03 / PROFILE</div>
       <h2>The Sound Behind the Song</h2>
-      <p>Pasan Asiri is a producer and composer shaping modern Sinhala music — from cinematic ballads to high-energy pop. Each track is built with obsessive attention to detail, emotion and sonic identity.</p>
+      <p>ASIRI PERERA is a producer and composer shaping modern Sinhala music — from cinematic ballads to high-energy pop. Each track is built with obsessive attention to detail, emotion and sonic identity.</p>
       <div class="skills"><span>Music Production</span><span>Composition</span><span>Arrangement</span><span>Mixing</span><span>Film & TV Scores</span></div>
     </div>
   </div>
@@ -199,9 +199,9 @@ footer{padding:30px 5vw;border-top:1px solid var(--line);display:flex;justify-co
 <section id="contact" class="contact">
   <div class="idx reveal">05 / COLLABORATE</div>
   <h2 class="reveal">LET'S BUILD<br>YOUR SOUND</h2>
-  <a class="btn reveal" href="mailto:hello@pasanasiri.com">hello@pasanasiri.com</a>
+  <a class="btn reveal" href="mailto:hello@ASIRIPERERA.com">hello@ASIRIPERERA.com</a>
 </section>
-<footer><span>© 2026 Pasan Asiri</span><span>YouTube · Spotify · Instagram</span></footer>
+<footer><span>© 2026 ASIRI PERERA</span><span>YouTube · Spotify · Instagram</span></footer>
 
 <div class="modal" id="modal"><div class="mbox"><button class="mclose" onclick="closeVideo()">✕ CLOSE</button><div id="player"></div><div class="mtitle" id="mtitle"></div></div></div>
 
@@ -209,7 +209,7 @@ footer{padding:30px 5vw;border-top:1px solid var(--line);display:flex;justify-co
 /* ===== EDIT CONTENT HERE ===== */
 const VIDEOS=[["Nuba Laga","O2K-jgLjYgY"],["Alawantha Heenaye","agv0GoBPc_Q"],["Nuba Badinawa","SjqYtphXuYE"],["Nangi Maage (Lama Geethaya)","WSmA3dyguPM"],["Medusa","OQJoI71vAFE"],["Kalu Kumara Nakatha","6TrAXcXZtUc"],["Premayak Thibuna","1H_ekuD9e1c"],["Boho Kal","259z7FAYD_0"]];
 // Replace url with real Spotify track links, e.g. https://open.spotify.com/track/XXXX
-const TRACKS=VIDEOS.map(([t])=>({t,url:"https://open.spotify.com/search/"+encodeURIComponent(t+" Pasan Asiri")}));
+const TRACKS=VIDEOS.map(([t])=>({t,url:"https://open.spotify.com/search/"+encodeURIComponent(t+" ASIRI PERERA")}));
 // Team: set photo to an image path (e.g. "img/team/kasun.jpg") — leave "" to show initials
 const TEAM=[
  {name:"Member Name",role:"Lyricist",bio:"Writes the words that carry the melody.",photo:"",links:{instagram:"#",youtube:"#"}},
@@ -233,7 +233,7 @@ document.getElementById('vgrid').innerHTML=VIDEOS.map(([t,id],i)=>`
 document.querySelectorAll('.vcard').forEach(c=>c.onclick=()=>openVideo(c.dataset.id,c.dataset.t));
 
 document.getElementById('tracks').innerHTML=TRACKS.map((s,i)=>`
- <div class="track reveal"><span class="n">${String(i+1).padStart(2,'0')}</span><div><h4>${esc(s.t)}</h4><small>Pasan Asiri</small></div>
+ <div class="track reveal"><span class="n">${String(i+1).padStart(2,'0')}</span><div><h4>${esc(s.t)}</h4><small>ASIRI PERERA</small></div>
  <div class="eq"><i></i><i></i><i></i><i></i></div>
  <a class="sp" href="${s.url}" target="_blank" rel="noopener" onclick="openSpotify(event,this.href)">● Play</a></div>`).join('');
 
